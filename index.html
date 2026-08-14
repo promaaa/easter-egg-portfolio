@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marc Duboc · Electrical & Embedded Systems Engineer</title>
+    <meta name="description" content="Marc Duboc · Electrical and embedded systems engineer building autonomous machines, digital hardware, and real-time systems." />
+    <meta name="keywords" content="Marc Duboc, Electrical Engineering, Embedded Systems, Robotics, PCB Design, STM32, ESP32, FPGA, Verilog, Paris" />
+    <meta name="author" content="Marc Duboc" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://promaa.live/" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://promaa.live/" />
+    <meta property="og:title" content="Marc Duboc · Electrical & Embedded Systems Engineer" />
+    <meta property="og:description" content="Marc Duboc · Electrical and embedded systems engineer building autonomous machines, digital hardware, and real-time systems." />
+    <meta property="og:image" content="https://promaa.live/assets/images/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Marc Duboc" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://promaa.live/" />
+    <meta name="twitter:title" content="Marc Duboc · Electrical & Embedded Systems Engineer" />
+    <meta name="twitter:description" content="Marc Duboc · Electrical and embedded systems engineer building autonomous machines, digital hardware, and real-time systems." />
+    <meta name="twitter:image" content="https://promaa.live/assets/images/og.png" />
+    <meta name="twitter:creator" content="@proma__" />
+    <meta name="twitter:site" content="@proma__" />
+
+    <!-- Google Fonts Preconnect & Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Pure Static Stylesheet (Zero Build Step) -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon: Dark purple interlocking C circles -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- JSON-LD Structured Data: Person Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Marc Duboc",
+      "jobTitle": "Electrical & Embedded Systems Engineer",
+      "email": "mailto:marc.duboc.pro@proton.me",
+      "url": "https://promaa.live/",
+      "image": "https://promaa.live/assets/images/og.png",
+      "sameAs": [
+        "https://github.com/promaaa",
+        "https://linkedin.com/in/marc-duboc-072932316",
+        "https://x.com/proma__",
+        "https://www.youtube.com/@promaa_"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paris",
+        "addressCountry": "France"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Persistent Background Canvas: Native WebGL 2.0 Raymarched Wave Field (Zero Dependencies) -->
+    <div id="waves-container" class="waves-bg-container"></div>
+
+    <!-- Soft Overlay Vignette -->
+    <div class="overlay-vignette"></div>
+
+    <!-- Floating Quick-Dock Navigation (Appears on Scroll) -->
+    <header id="floating-dock" class="floating-dock-header" aria-label="Quick navigation">
+      <div class="dock-pill">
+        <a href="#" class="dock-logo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" aria-label="Scroll to top">MD</a>
+        <nav class="dock-nav">
+          <a href="#works" class="dock-link">works</a>
+          <a href="#about" class="dock-link">about</a>
+          <a href="#books" class="dock-link">books</a>
+          <a href="./essays/" class="dock-link">essays</a>
+          <a href="#contact" class="dock-link">contact</a>
+        </nav>
+        <a href="#" class="dock-top-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" title="Back to top" aria-label="Back to top">↑</a>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         1. Hero Viewport (100vh)
+         ==================================================================== -->
+    <header class="hero-viewport">
+      <div class="hero-center">
+        <h1 class="hero-title">Marc Duboc</h1>
+        <p class="hero-subtitle">Electrical & Embedded Systems Engineer</p>
+        <div class="hero-location-row">
+          <div class="hero-location" id="secret-hero-trigger" style="cursor: pointer;" title="Paris, France">Paris, France</div>
+        </div>
+      </div>
+
+      <!-- Minimalist Navigation Pill -->
+      <div class="hero-footer-nav">
+        <nav class="nav-pill" aria-label="Primary navigation">
+          <a
+            href="mailto:marc.duboc.pro@proton.me"
+            class="nav-link-btn"
+            title="Send email"
+          >
+            email
+          </a>
+          <span class="nav-sep" aria-hidden="true">•</span>
+          <a href="#works" class="nav-link-btn">works</a>
+          <span class="nav-sep" aria-hidden="true">•</span>
+          <a href="#about" class="nav-link-btn">about</a>
+          <span class="nav-sep" aria-hidden="true">•</span>
+          <a href="#books" class="nav-link-btn">books</a>
+          <span class="nav-sep" aria-hidden="true">•</span>
+          <a
+            href="https://github.com/promaaa"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-link-btn"
+          >
+            github
+          </a>
+          <span class="nav-sep" aria-hidden="true">•</span>
+          <a
+            href="https://linkedin.com/in/marc-duboc-072932316"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-link-btn"
+          >
+            linkedin
+          </a>
+          <span class="nav-sep" aria-hidden="true">•</span>
+          <a
+            href="https://x.com/proma__"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-link-btn"
+          >
+            x
+          </a>
+        </nav>
+
+        <a href="#works" class="scroll-hint" aria-label="Scroll to works">
+          <span>discover</span>
+          <span>↓</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         2. Main Scrollable Content
+         ==================================================================== -->
+    <main class="content-wrapper">
+      <!-- Section: Works -->
+      <section id="works" class="page-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="kicker-dot"></span>
+              <span>01 / Selected Works</span>
+            </div>
+            <h2 class="section-title">Machines, systems & prototypes.</h2>
+            <p class="section-intro">
+              Engineering builds and hardware prototypes across robotics, digital logic, wireless telecom, and embedded systems.
+            </p>
+          </div>
+
+          <div class="works-grid">
+            <!-- 01: Ball Collecting Robot -->
+            <article class="work-card" data-href="https://github.com/promaaa/ball-collecting-robots">
+              <div>
+                <div class="work-card-top">
+                  <h3 class="work-card-title">
+                    <a
+                      href="https://github.com/promaaa/ball-collecting-robots"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="work-card-title-link"
+                    >
+                      <span>Autonomous Ball-Collecting Robot</span>
+                      <span>↗</span>
+                    </a>
+                  </h3>
+                  <span class="work-card-tag">Robotics · PID · Motor ID</span>
+                </div>
+                <p class="work-card-desc">
+                  Optical-bearing guidance, first-order DC motor transfer function identification, and cascaded PI speed/heading control loops for sub-centimeter positioning.
+                </p>
+              </div>
+              <div class="work-card-footer">
+                <div class="work-card-actions">
+                  <a
+                    href="https://github.com/promaaa/ball-collecting-robots"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work-card-link-text"
+                  >
+                    <span>GitHub</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+                <span class="work-card-index">01</span>
+              </div>
+            </article>
+
+            <!-- 02: Chess Robot -->
+            <article class="work-card" data-href="https://github.com/promaaa/smart-chess">
+              <div>
+                <div class="work-card-top">
+                  <h3 class="work-card-title">
+                    <a
+                      href="https://github.com/promaaa/smart-chess"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="work-card-title-link"
+                    >
+                      <span>Physical Chess-Playing Robot</span>
+                      <span>↗</span>
+                    </a>
+                  </h3>
+                  <span class="work-card-tag">Robotics · Vision · Engine</span>
+                </div>
+                <p class="work-card-desc">
+                  Full end-to-end pipeline from 64-reed sensor matrix and PyTorch CNN corner tracking to an embedded IA-Marc V2 engine on Raspberry Pi 5. Complete build photos &amp; CAD.
+                </p>
+              </div>
+              <div class="work-card-footer">
+                <div class="work-card-actions">
+                  <a
+                    href="https://github.com/promaaa/smart-chess"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work-card-link-text"
+                  >
+                    <span>GitHub</span>
+                    <span>↗</span>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=5BC216xx9qs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work-card-sub-link"
+                    title="Watch project video demo on YouTube"
+                  >
+                    <svg class="link-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    <span>Video Demo</span>
+                    <span class="sub-arrow">↗</span>
+                  </a>
+                </div>
+                <span class="work-card-index">02</span>
+              </div>
+            </article>
+
+            <!-- 03: Nand2cpu ALU -->
+            <article class="work-card" data-href="https://github.com/promaaa/nand2cpu">
+              <div>
+                <div class="work-card-top">
+                  <h3 class="work-card-title">
+                    <a
+                      href="https://github.com/promaaa/nand2cpu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="work-card-title-link"
+                    >
+                      <span>Nand2cpu: 16-bit ALU</span>
+                      <span>↗</span>
+                    </a>
+                  </h3>
+                  <span class="work-card-tag">Digital Logic · Verilog · ALU</span>
+                </div>
+                <p class="work-card-desc">
+                  16-bit arithmetic logic unit built from first principles in Verilog, complete with automated verification testbench (7 + 8 = 15), assembler, and embedded video demo.
+                </p>
+              </div>
+              <div class="work-card-footer">
+                <div class="work-card-actions">
+                  <a
+                    href="https://github.com/promaaa/nand2cpu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work-card-link-text"
+                  >
+                    <span>GitHub</span>
+                    <span>↗</span>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=wIBkvQ6MfKQ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work-card-sub-link"
+                    title="Watch video demo on YouTube"
+                  >
+                    <svg class="link-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    <span>Video Demo</span>
+                    <span class="sub-arrow">↗</span>
+                  </a>
+                </div>
+                <span class="work-card-index">03</span>
+              </div>
+            </article>
+
+            <!-- 04: OAI 5G CU-DU Lab -->
+            <article class="work-card" data-href="https://github.com/promaaa/oai-cu-du-lab">
+              <div>
+                <div class="work-card-top">
+                  <h3 class="work-card-title">
+                    <a
+                      href="https://github.com/promaaa/oai-cu-du-lab"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="work-card-title-link"
+                    >
+                      <span>OAI 5G CU-DU Architecture</span>
+                      <span>↗</span>
+                    </a>
+                  </h3>
+                  <span class="work-card-tag">5G NR · O-RAN · Telecom</span>
+                </div>
+                <p class="work-card-desc">
+                  Disaggregated 5G gNodeB architecture (CU/DU split) using OpenAirInterface with F1-C/F1-U interface validation, custom SCTP kernel, and finished 6-page research paper.
+                </p>
+              </div>
+              <div class="work-card-footer">
+                <div class="work-card-actions">
+                  <a
+                    href="https://github.com/promaaa/oai-cu-du-lab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work-card-link-text"
+                  >
+                    <span>GitHub</span>
+                    <span>↗</span>
+                  </a>
+                  <a
+                    href="assets/docs/oai-5g-research-paper.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work-card-sub-link"
+                    title="Download 6-page research paper PDF"
+                  >
+                    <svg class="link-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                      <line x1="16" y1="13" x2="8" y2="13"/>
+                      <line x1="16" y1="17" x2="8" y2="17"/>
+                      <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                    <span>Paper (PDF)</span>
+                    <span class="sub-arrow">↗</span>
+                  </a>
+                </div>
+                <span class="work-card-index">04</span>
+              </div>
+            </article>
+
+            <!-- 05: Evento -->
+            <article class="work-card" data-href="https://github.com/promaaa/evento">
+              <div>
+                <div class="work-card-top">
+                  <h3 class="work-card-title">
+                    <a
+                      href="https://github.com/promaaa/evento"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="work-card-title-link"
+                    >
+                      <span>Evento: Web3 Ticketing</span>
+                      <span>↗</span>
+                    </a>
+                  </h3>
+                  <span class="work-card-tag">Solana Pay · Django</span>
+                </div>
+                <p class="work-card-desc">
+                  Wallet-based ticketing infrastructure with Solana Pay under hackathon constraints; clean on-chain / off-chain boundary with sub-second finality.
+                </p>
+              </div>
+              <div class="work-card-footer">
+                <div class="work-card-actions">
+                  <a
+                    href="https://github.com/promaaa/evento"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work-card-link-text"
+                  >
+                    <span>GitHub</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+                <span class="work-card-index">05</span>
+              </div>
+            </article>
+
+            <!-- 06: Real-time Power Monitor -->
+            <article class="work-card" data-href="https://github.com/promaaa/smart_grid_JPA">
+              <div>
+                <div class="work-card-top">
+                  <h3 class="work-card-title">
+                    <a
+                      href="https://github.com/promaaa/smart_grid_JPA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="work-card-title-link"
+                    >
+                      <span>Real-Time Power Monitor</span>
+                      <span>↗</span>
+                    </a>
+                  </h3>
+                  <span class="work-card-tag">ESP32 · IoT · Power Telemetry</span>
+                </div>
+                <p class="work-card-desc">
+                  Non-invasive energy monitor using ESP32 and ACS712 Hall-effect sensor. ±1.3% precision with high-speed UDP ingestion and live interactive waveform scope.
+                </p>
+              </div>
+              <div class="work-card-footer">
+                <div class="work-card-actions">
+                  <a
+                    href="https://github.com/promaaa/smart_grid_JPA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="work-card-link-text"
+                  >
+                    <span>GitHub</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+                <span class="work-card-index">06</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: About -->
+      <section id="about" class="page-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="kicker-dot"></span>
+              <span>02 / About & Background</span>
+            </div>
+            <h2 class="section-title">Built through theory. Tested in practice.</h2>
+          </div>
+
+          <div class="silver-panel about-grid">
+            <div class="about-narrative">
+              <h3 class="about-headline">
+                Building intelligent machines from silicon to software.
+              </h3>
+              <p class="about-p">
+                I am an electrical and embedded systems engineer currently conducting research at <strong>Seoul National University (SNU)</strong> in AI and robotics.
+              </p>
+              <p class="about-p">
+                My background spans autonomous robotics, closed-loop control systems, custom PCB layout, and real-time firmware architectures, turning complex physical challenges into deterministic hardware with clean software abstractions.
+              </p>
+            </div>
+
+            <div class="about-side">
+              <div class="about-block">
+                <span class="about-label">Education & Research</span>
+                <p class="about-val">
+                  <strong>Seoul National University (SNU)</strong> · AI & Robotics<br>
+                  <strong>IMT Atlantique</strong> · Embedded Systems & Robotics<br>
+                  <strong>CPGE Pierre Corneille</strong> · Mathematics & Physics
+                </p>
+              </div>
+
+              <div class="about-block">
+                <span class="about-label">Capabilities</span>
+                <div class="caps-pills">
+                  <span class="cap-pill">AI & Robotics</span>
+                  <span class="cap-pill">STM32 / ESP32</span>
+                  <span class="cap-pill">Embedded C/C++</span>
+                  <span class="cap-pill">Altium & KiCad</span>
+                  <span class="cap-pill">Verilog & FPGA</span>
+                  <span class="cap-pill">FreeRTOS</span>
+                  <span class="cap-pill">PID & Kinematics</span>
+                  <span class="cap-pill">CAN / SPI / I2C</span>
+                  <span class="cap-pill">OpenCV</span>
+                </div>
+              </div>
+
+              <div class="about-block">
+                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                  <span class="about-label">Essays & Writing</span>
+                  <a href="./essays/" style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--silver-muted); text-decoration: none;">all essays (5) ↗</a>
+                </div>
+                <div class="about-essays-list">
+                  <a href="./essays/unspoken-dialogue/" class="about-essay-link">· The Unspoken Dialogue ↗</a>
+                  <a href="./essays/lucid-hope/" class="about-essay-link">· Lucid Hope ↗</a>
+                  <a href="./essays/domestic-sovereignty/" class="about-essay-link">· Domestic Sovereignty ↗</a>
+                  <a href="./essays/collapse-of-money/" class="about-essay-link">· The Collapse of Money ↗</a>
+                  <a href="./essays/the-work-of-writing/" class="about-essay-link">· The Work of Writing ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Favorite Books -->
+      <section id="books" class="page-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">
+              <span class="kicker-dot"></span>
+              <span>03 / Favorite Books</span>
+            </div>
+            <h2 class="section-title">Ideas in the margins.</h2>
+            <p class="section-intro">
+              Three formative books and curated selections I would recommend to a friend.
+            </p>
+          </div>
+
+          <div class="books-grid">
+            <!-- Book 01: Atlas Shrugged -->
+            <article class="book-card-small" id="book-card-atlas" style="cursor: pointer;" title="Atlas Shrugged · Click to unlock Easter egg">
+              <div class="book-cover-wrap-small">
+                <img
+                  src="pictures/atlas-shrugged.jpg"
+                  alt="Atlas Shrugged by Ayn Rand"
+                  class="book-cover-img"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span class="book-genre-tag">Philosophical Fiction · Individualism</span>
+              <h3 class="book-title">Atlas Shrugged</h3>
+              <p class="book-author">Ayn Rand</p>
+            </article>
+
+            <!-- Book 02: Monte Cristo -->
+            <article class="book-card-small" id="book-card-montecristo" style="cursor: pointer;" title="Le Comte de Monte-Cristo · Click to unlock Easter egg">
+              <div class="book-cover-wrap-small">
+                <img
+                  src="pictures/monteCristo.jpg"
+                  alt="Le Comte de Monte-Cristo by Alexandre Dumas"
+                  class="book-cover-img"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span class="book-genre-tag">Classic Novel · Strategy</span>
+              <h3 class="book-title">Le Comte de Monte-Cristo</h3>
+              <p class="book-author">Alexandre Dumas</p>
+            </article>
+
+            <!-- Book 03: Manufacturing Consent -->
+            <article class="book-card-small" id="book-card-consent" style="cursor: pointer;" title="Manufacturing Consent · Click to unlock Easter egg">
+              <div class="book-cover-wrap-small">
+                <img
+                  src="pictures/manufacturing-consent.jpg"
+                  alt="Manufacturing Consent by Chomsky and Herman"
+                  class="book-cover-img"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span class="book-genre-tag">Political Theory · Media</span>
+              <h3 class="book-title">Manufacturing Consent</h3>
+              <p class="book-author">Noam Chomsky & Edward S. Herman</p>
+            </article>
+          </div>
+
+          <!-- Favorite Books Links -->
+          <div class="books-links-bar">
+            <a
+              href="assets/docs/books-recommendations-en.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="books-list-link"
+            >
+              <span>Reading Field Guide (EN)</span>
+              <span>↓</span>
+            </a>
+            <a
+              href="assets/docs/livres-recommandes-fr.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="books-list-link"
+            >
+              <span>Guide de Lecture (FR)</span>
+              <span>↓</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Contact -->
+      <section id="contact" class="page-section">
+        <div class="container">
+          <div class="silver-panel contact-block">
+            <div class="section-kicker">
+              <span class="kicker-dot"></span>
+              <span>04 / Connect</span>
+            </div>
+            <h2 class="section-title">Let’s build something worth testing.</h2>
+            <p class="section-intro">
+              Interested in robotics, embedded systems, and innovative engineering collaborations.
+            </p>
+
+            <a
+              href="mailto:marc.duboc.pro@proton.me"
+              class="contact-email-btn"
+              onclick="copyEmail(this, event)"
+              title="Click to copy address or send email"
+            >
+              <span class="email-address-text">marc.duboc.pro@proton.me</span>
+              <span class="email-btn-icon-wrap" aria-hidden="true">
+                <svg class="email-copy-icon icon-default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <svg class="email-copy-icon icon-success" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span class="email-btn-feedback">copied!</span>
+            </a>
+
+            <div class="contact-social-row">
+              <a href="https://github.com/promaaa" target="_blank" rel="noopener noreferrer" class="social-link">
+                GitHub ↗
+              </a>
+              <span class="nav-sep">•</span>
+              <a href="https://linkedin.com/in/marc-duboc-072932316" target="_blank" rel="noopener noreferrer" class="social-link">
+                LinkedIn ↗
+              </a>
+              <span class="nav-sep">•</span>
+              <a href="https://x.com/proma__" target="_blank" rel="noopener noreferrer" class="social-link">
+                X ↗
+              </a>
+              <span class="nav-sep">•</span>
+              <a href="https://www.youtube.com/@promaa_" target="_blank" rel="noopener noreferrer" class="social-link">
+                YouTube ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Bottom Footer -->
+          <footer class="site-bottom-footer">
+            <span>Marc Duboc / Electrical & Embedded Systems Engineer</span>
+            <a href="#" class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+              Back to top ↑
+            </a>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         Full-Screen Cinematic Easter Egg: Who is John Galt?
+         ==================================================================== -->
+    <div
+      id="galt-modal"
+      class="galt-cinema-overlay"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Who is John Galt?"
+      onclick="closeGaltModal()"
+    >
+      <div class="galt-cinema-glow" aria-hidden="true"></div>
+      <div class="galt-anamorphic-beam" aria-hidden="true"></div>
+      
+      <div class="galt-cinema-content">
+        <div class="galt-cinema-title-wrap">
+          <h1 class="galt-cinema-title">WHO IS JOHN GALT?</h1>
+        </div>
+        <div class="galt-cinema-line" aria-hidden="true"></div>
+        <p class="galt-cinema-sub">The motor of the world.</p>
+      </div>
+
+      <div class="galt-cinema-exit" aria-hidden="true">
+        <span>[ click anywhere or esc to return ]</span>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         Full-Screen Cinematic Easter Egg: The Count of Monte Cristo
+         (Antique Parchment Manuscript)
+         ==================================================================== -->
+    <div
+      id="montecristo-modal"
+      class="montecristo-cinema-overlay"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-label="The Count of Monte Cristo: Wait and Hope"
+      onclick="closeMontecristoModal()"
+    >
+      <div class="montecristo-candlelight-aura" aria-hidden="true"></div>
+      
+      <div class="montecristo-parchment-sheet" onclick="event.stopPropagation()">
+        <div class="montecristo-parchment-inner">
+          <div class="montecristo-header-seal">
+            <span class="montecristo-location-tag">Château d’If · Marseille, 1838</span>
+          </div>
+
+          <h2 class="montecristo-parchment-title">Wait and Hope.</h2>
+
+          <div class="montecristo-signature-row">
+            <span class="montecristo-signature">— Alexandre Dumas · The Count of Monte Cristo</span>
+            <button class="montecristo-wax-btn" onclick="closeMontecristoModal()">
+              <span>✦ Close / Esc ✦</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         Full-Screen Julian Assange Portrait Modal (Silent & Minimalist)
+         ==================================================================== -->
+    <div
+      id="assange-modal"
+      class="assange-portrait-overlay"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Julian Assange Portrait"
+      onclick="closeAssangeModal()"
+    >
+      <div class="assange-portrait-card" onclick="event.stopPropagation()">
+        <div class="assange-img-wrapper">
+          <img
+            src="pictures/assange.jpg"
+            alt="Julian Assange"
+            class="assange-portrait-img"
+            width="320"
+            height="400"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <h2 class="assange-name">Julian Assange</h2>
+        <div class="assange-title">WikiLeaks Founder · Publisher &amp; Journalist</div>
+        <p class="assange-quote">“Courage is contagious.”</p>
+
+        <button class="assange-close-btn" onclick="closeAssangeModal()">
+          <span>[ Close / Esc ]</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Core Application & WebGL Scripts -->
+    <script src="assets/js/waves.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/easter-eggs.js" defer></script>
+  </body>
+</html>

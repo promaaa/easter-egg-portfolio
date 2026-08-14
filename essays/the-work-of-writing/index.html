@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Work of Writing · Marc Duboc</title>
+    <meta name="description" content="Writing as the workshop where thought becomes load-bearing; habits, tools, and craft." />
+    <meta name="author" content="Marc Duboc" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://promaa.live/essays/the-work-of-writing/" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://promaa.live/essays/the-work-of-writing/" />
+    <meta property="og:title" content="The Work of Writing · Marc Duboc" />
+    <meta property="og:description" content="Writing as the workshop where thought becomes load-bearing; habits, tools, and craft." />
+    <meta property="og:image" content="https://promaa.live/assets/images/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Marc Duboc" />
+    <meta property="article:published_time" content="2023-05-09" />
+    <meta property="article:author" content="https://promaa.live/" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://promaa.live/essays/the-work-of-writing/" />
+    <meta name="twitter:title" content="The Work of Writing · Marc Duboc" />
+    <meta name="twitter:description" content="Writing as the workshop where thought becomes load-bearing; habits, tools, and craft." />
+    <meta name="twitter:image" content="https://promaa.live/assets/images/og.png" />
+    <meta name="twitter:creator" content="@proma__" />
+    <meta name="twitter:site" content="@proma__" />
+
+    <!-- Google Fonts Preconnect & Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+
+    <!-- JSON-LD Structured Data: BlogPosting -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The Work of Writing",
+      "description": "Writing as the workshop where thought becomes load-bearing; habits, tools, and craft.",
+      "url": "https://promaa.live/essays/the-work-of-writing/",
+      "image": "https://promaa.live/assets/images/og.png",
+      "datePublished": "2023-05-09",
+      "dateModified": "2023-05-09",
+      "author": {
+        "@type": "Person",
+        "name": "Marc Duboc",
+        "jobTitle": "Electrical & Embedded Systems Engineer",
+        "url": "https://promaa.live/",
+        "sameAs": [
+          "https://github.com/promaaa",
+          "https://linkedin.com/in/marc-duboc-072932316",
+          "https://x.com/proma__",
+          "https://www.youtube.com/@promaa_"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Marc Duboc",
+        "url": "https://promaa.live/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://promaa.live/essays/the-work-of-writing/"
+      }
+    }
+    </script>
+
+    <style>
+      :root {
+        --bg-color: #07070b;
+        --surface-color: rgba(14, 14, 20, 0.95);
+        --text-primary: #ffffff;
+        --text-secondary: #cbd5e1;
+        --text-muted: #94a3b8;
+        --text-dim: #64748b;
+        --border-subtle: rgba(255, 255, 255, 0.08);
+        --border-medium: rgba(255, 255, 255, 0.16);
+        --font-display: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: 'JetBrains Mono', monospace;
+      }
+
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        background-color: var(--bg-color);
+        color: var(--text-primary);
+        font-family: var(--font-body);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 1.5rem 6rem;
+      }
+
+      .reading-layout {
+        width: 100%;
+        max-width: 680px;
+        margin: 0 auto;
+      }
+
+      .essay-top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3.5rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .back-link:hover {
+        color: var(--text-primary);
+      }
+
+      .essay-meta-tag {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--text-dim);
+        letter-spacing: 0.08em;
+      }
+
+      .essay-hero-figure {
+        width: 100%;
+        margin-bottom: 2.75rem;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid var(--border-subtle);
+        background: var(--surface-color);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+      }
+
+      .essay-hero-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      .essay-header {
+        margin-bottom: 2.5rem;
+      }
+
+      .essay-kicker {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        margin-bottom: 0.75rem;
+      }
+
+      .essay-title {
+        font-family: var(--font-display);
+        font-size: clamp(2.2rem, 5vw, 3.2rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+      }
+
+      .essay-subtitle {
+        font-size: 1.15rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        font-style: italic;
+        font-weight: 300;
+        padding-bottom: 1.75rem;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .essay-prose {
+        display: flex;
+        flex-direction: column;
+        gap: 1.65rem;
+      }
+
+      .essay-prose p {
+        font-size: 1.05rem;
+        line-height: 1.82;
+        color: var(--text-secondary);
+        letter-spacing: -0.005em;
+      }
+
+      .essay-prose p:first-of-type::first-letter {
+        font-family: var(--font-display);
+        font-size: 3.2rem;
+        float: left;
+        line-height: 0.85;
+        margin: 0.15rem 0.65rem 0 0;
+        color: var(--text-primary);
+        font-weight: 700;
+      }
+
+      .essay-footer {
+        margin-top: 4.5rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid var(--border-subtle);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer-author {
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+
+      .footer-back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.55rem 1.1rem;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-subtle);
+        color: var(--text-primary);
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      .reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #5227FF, #FF9FFC, #ffffff);
+        width: 0%;
+        z-index: 1000;
+        transition: width 0.08s linear;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 1.5rem 1.1rem 4.5rem;
+        }
+
+        .essay-top-nav {
+          margin-bottom: 2rem;
+        }
+
+        .essay-hero-figure {
+          margin-bottom: 2rem;
+          border-radius: 12px;
+        }
+
+        .essay-header {
+          margin-bottom: 2rem;
+        }
+
+        .essay-title {
+          font-size: clamp(1.85rem, 8vw, 2.4rem);
+        }
+
+        .essay-subtitle {
+          font-size: 1.02rem;
+          padding-bottom: 1.25rem;
+        }
+
+        .essay-prose p {
+          font-size: 0.98rem;
+          line-height: 1.76;
+        }
+
+        .essay-prose p:first-of-type::first-letter {
+          font-size: 2.75rem;
+          margin: 0.1rem 0.5rem 0 0;
+        }
+
+        .essay-footer {
+          margin-top: 3.5rem;
+          padding-top: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+    <main class="reading-layout">
+      <!-- Top Navigation -->
+      <nav class="essay-top-nav">
+        <a href="../../" class="back-link">
+          <span>←</span>
+          <span>Marc Duboc</span>
+        </a>
+        <span class="essay-meta-tag"><time datetime="2023-05-09">May 9, 2023</time> • Essay</span>
+      </nav>
+
+      <!-- Hero Image -->
+      <figure class="essay-hero-figure">
+        <img
+          src="./picture.png"
+          alt="The Work of Writing · Marc Duboc"
+          class="essay-hero-img"
+          loading="lazy"
+          decoding="async"
+          width="680"
+          height="382"
+        />
+      </figure>
+
+      <!-- Essay Header -->
+      <header class="essay-header">
+        <div class="essay-kicker">05 / Essay</div>
+        <h1 class="essay-title">The Work of Writing</h1>
+        <p class="essay-subtitle">
+          Writing as the workshop where thought becomes load-bearing; habits, tools, and craft.
+        </p>
+      </header>
+
+      <!-- Article Prose -->
+      <article class="essay-prose">
+        <p>
+          Writing is not what happens after thinking. Writing is where thinking happens with its sleeves rolled up. Before the page, ideas are friendly shapes in fog; on the page, they are required to stand, carry weight, and face cross-examination. This is why a day that contains an hour of real writing has a different gravity than a day that contains ten hours of talk. Talk lets intention pose as insight. Writing demands receipts.
+        </p>
+
+        <p>
+          A blank page is not a void; it is a calibrated instrument. Put a sentence on it and the instrument reports back: too vague, too ornamental, too certain too soon. The page is insensitive to status and charm. It listens only for force and fit. Most of what feels like writer’s block is not lack of ideas, but a meter refusing counterfeit currency. The cure is not inspiration; it is revision.
+        </p>
+
+        <p>
+          Revision is the workshop where thought becomes load-bearing. Change a verb and you change a claim. Move a clause and you change causality. Cut a paragraph and a hidden dependency collapses somewhere else. Form is not a coat on content; it is the skeleton. A wing only lifts if it is drawn right. Good prose is not pretty speech; it is a design that flies.
+        </p>
+
+        <p>
+          Reading fills, writing metabolizes. You can carry a shelf of borrowed muscle and still be weak; only what you have digested becomes yours. Copy a theorem, and you have seen it; explain it to a cousin in your words, and you own it. Underline generous pages by others, but measure understanding by the pages you can produce without them. Passive knowledge flatters; active knowledge survives weather.
+        </p>
+
+        <p>
+          There is a calm that follows a page that finally says what you mean. It is not the calm of performance; it is the quiet of alignment. The sentence meets the thought, the thought meets the world, and for one small surface the fittings hold. The feeling is addictive in the clean way exercise is addictive: it builds capacity, not dependence.
+        </p>
+
+        <p>
+          Good writing is slow honesty. It is easier to let a rhetorical gust carry you than to land the plane on a narrow strip of truth. The gust feels exciting; the landing teaches skill. The discipline is simple and unglamorous: write briefly every day, even badly; return to yesterday’s mess and make it 10% less dishonest; stop mid-sentence so tomorrow has a handle; make the first edit for sense, the second for shape, the third for sound. When in doubt, trade cleverness for contact.
+        </p>
+
+        <p>
+          Tools matter less than habits, but certain tools reward seriousness. Plain text is a good friend because it ages well. Versioning your drafts lets you see yourself thinking, and diff is a kind critic: it highlights what you changed without arguing motives. A single working document per piece prevents the museum of fragments; an archive folder keeps your dead words where they can compost into humus for the next plot.
+        </p>
+
+        <p>
+          Ritual helps. A fixed hour, a door that closes, a notebook open before the screen, a small rule that the network is invited only after the page has something to show. The mind is bolder when it knows interruption is unlikely. Closing loops at day’s end - a short note of what remains, a line that says “shutdown complete” - clears the hum that otherwise turns into irritability. Clarity is easier after sleep; sleep is easier after closure.
+        </p>
+
+        <p>
+          Write to decide. Most decisions that feel complex are just cloudy until phrased. A page that forces the constraints, the options, the costs, the non-negotiables will often make the choice choose you. If you cannot name what would change your mind, you have an opinion, not a position. The page insists you pick one.
+        </p>
+
+        <p>
+          Write to lead. Meetings are a poor place to think; the social engine idles too loud. A short memo that explains the problem, states the bet, names the unknowns, and proposes the smallest useful next step can replace an hour of theater. People do better work when they are responding to a shaped thought instead of a feeling with bullet points.
+        </p>
+
+        <p>
+          The importance of writing is not that it produces books. It is that it produces a self capable of contact with reality. A person who writes well does not merely communicate; they notice. And noticing is the front door to almost everything we claim to value: better work, quieter conscience, truer friendship, saner politics. In the long run, writing is a way of not lying - to others, and first to yourself.
+        </p>
+      </article>
+
+      <!-- Footer -->
+      <footer class="essay-footer">
+        <span class="footer-author">Marc Duboc · Paris, France</span>
+        <a href="../../" class="footer-back-btn">
+          <span>← Back to portfolio</span>
+        </a>
+      </footer>
+    </main>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        const bar = document.getElementById('reading-progress');
+        if (bar) bar.style.width = scrolled + '%';
+      }, { passive: true });
+    </script>
+  </body>
+</html>

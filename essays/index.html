@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essays · Marc Duboc</title>
+    <meta name="description" content="Essays and notes by Marc Duboc on craft, discipline, physical effort, money, and sovereignty." />
+    <meta name="author" content="Marc Duboc" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://promaa.live/essays/" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://promaa.live/essays/" />
+    <meta property="og:title" content="Essays & Notes · Marc Duboc" />
+    <meta property="og:description" content="Essays and notes by Marc Duboc on craft, discipline, physical effort, money, and sovereignty." />
+    <meta property="og:image" content="https://promaa.live/assets/images/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Marc Duboc" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://promaa.live/essays/" />
+    <meta name="twitter:title" content="Essays & Notes · Marc Duboc" />
+    <meta name="twitter:description" content="Essays and notes by Marc Duboc on craft, discipline, physical effort, money, and sovereignty." />
+    <meta name="twitter:image" content="https://promaa.live/assets/images/og.png" />
+    <meta name="twitter:creator" content="@proma__" />
+    <meta name="twitter:site" content="@proma__" />
+
+    <!-- Google Fonts Preconnect & Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+
+    <style>
+      :root {
+        --bg-color: #07070b;
+        --surface-color: rgba(14, 14, 20, 0.95);
+        --surface-card: rgba(255, 255, 255, 0.025);
+        --surface-card-hover: rgba(255, 255, 255, 0.06);
+        --text-primary: #ffffff;
+        --text-secondary: #cbd5e1;
+        --text-muted: #94a3b8;
+        --text-dim: #64748b;
+        --border-subtle: rgba(255, 255, 255, 0.08);
+        --border-medium: rgba(255, 255, 255, 0.16);
+        --font-display: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: 'JetBrains Mono', monospace;
+        --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        background-color: var(--bg-color);
+        color: var(--text-primary);
+        font-family: var(--font-body);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 1.5rem 6rem;
+      }
+
+      .reading-layout {
+        width: 100%;
+        max-width: 680px;
+        margin: 0 auto;
+      }
+
+      .essay-top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3.5rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .back-link:hover {
+        color: var(--text-primary);
+      }
+
+      .header-block {
+        margin-bottom: 3rem;
+      }
+
+      .header-kicker {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        margin-bottom: 0.6rem;
+      }
+
+      .header-title {
+        font-family: var(--font-display);
+        font-size: clamp(2.2rem, 5vw, 3rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        color: var(--text-primary);
+        margin-bottom: 0.75rem;
+      }
+
+      .header-desc {
+        font-size: 1.05rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      .essays-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      .essay-row-card {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        border-radius: 14px;
+        background: var(--surface-card);
+        border: 1px solid var(--border-subtle);
+        text-decoration: none;
+        transition: all 0.25s var(--ease-out);
+      }
+
+      .essay-row-card:hover {
+        background: var(--surface-card-hover);
+        border-color: var(--border-medium);
+        transform: translateY(-2px);
+      }
+
+      .essay-row-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .essay-row-date {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--text-dim);
+      }
+
+      .essay-row-title {
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        letter-spacing: -0.015em;
+        margin-bottom: 0.35rem;
+      }
+
+      .essay-row-desc {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        line-height: 1.55;
+      }
+
+      .footer-block {
+        margin-top: 4.5rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid var(--border-subtle);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer-text {
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 1.5rem 1rem 4.5rem;
+        }
+
+        .essay-top-nav {
+          margin-bottom: 2.25rem;
+        }
+
+        .header-block {
+          margin-bottom: 2rem;
+        }
+
+        .essay-row-card {
+          padding: 1.2rem;
+        }
+
+        .footer-block {
+          margin-top: 3rem;
+          padding-top: 1.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="reading-layout">
+      <nav class="essay-top-nav">
+        <a href="../" class="back-link">
+          <span>←</span>
+          <span>Marc Duboc</span>
+        </a>
+        <span class="footer-text">Writing & Essays</span>
+      </nav>
+
+      <div class="header-block">
+        <div class="header-kicker">Writing Archive</div>
+        <h1 class="header-title">Essays & Notes</h1>
+        <p class="header-desc">
+          Notes on engineering, physical effort, intellectual honesty, sovereignty, and systems.
+        </p>
+      </div>
+
+      <div class="essays-list">
+        <!-- 01: The Unspoken Dialogue -->
+        <a href="./unspoken-dialogue/" class="essay-row-card">
+          <div class="essay-row-top">
+            <time class="essay-row-date" datetime="2025-10-17">Oct 17, 2025</time>
+            <span class="footer-text">↗</span>
+          </div>
+          <h2 class="essay-row-title">The Unspoken Dialogue</h2>
+          <p class="essay-row-desc">
+            On the grounding honesty of physical effort and its dialogue with the intellectual mind.
+          </p>
+        </a>
+
+        <!-- 02: Lucid Hope -->
+        <a href="./lucid-hope/" class="essay-row-card">
+          <div class="essay-row-top">
+            <time class="essay-row-date" datetime="2025-07-03">Jul 3, 2025</time>
+            <span class="footer-text">↗</span>
+          </div>
+          <h2 class="essay-row-title">Lucid Hope</h2>
+          <p class="essay-row-desc">
+            A case for disciplined optimism, attention, and craft over cynicism.
+          </p>
+        </a>
+
+        <!-- 03: Domestic Sovereignty -->
+        <a href="./domestic-sovereignty/" class="essay-row-card">
+          <div class="essay-row-top">
+            <time class="essay-row-date" datetime="2025-01-20">Jan 20, 2025</time>
+            <span class="footer-text">↗</span>
+          </div>
+          <h2 class="essay-row-title">Domestic Sovereignty</h2>
+          <p class="essay-row-desc">
+            On the quiet freedom of running your own services and choosing dependencies that deserve you.
+          </p>
+        </a>
+
+        <!-- 04: The Collapse of Money -->
+        <a href="./collapse-of-money/" class="essay-row-card">
+          <div class="essay-row-top">
+            <time class="essay-row-date" datetime="2024-08-14">Aug 14, 2024</time>
+            <span class="footer-text">↗</span>
+          </div>
+          <h2 class="essay-row-title">The Collapse of Money</h2>
+          <p class="essay-row-desc">
+            A journey through the history of exchange: from barter to fiat and the digital reset.
+          </p>
+        </a>
+
+        <!-- 05: The Work of Writing -->
+        <a href="./the-work-of-writing/" class="essay-row-card">
+          <div class="essay-row-top">
+            <time class="essay-row-date" datetime="2023-05-09">May 9, 2023</time>
+            <span class="footer-text">↗</span>
+          </div>
+          <h2 class="essay-row-title">The Work of Writing</h2>
+          <p class="essay-row-desc">
+            Writing as the workshop where thought becomes load-bearing; habits, tools, and craft.
+          </p>
+        </a>
+      </div>
+
+      <footer class="footer-block">
+        <span class="footer-text">Marc Duboc · Paris, France</span>
+        <a href="../" class="back-link">
+          <span>← Back to portfolio</span>
+        </a>
+      </footer>
+    </main>
+  </body>
+</html>

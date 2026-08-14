@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240">
+  <rect width="600" height="240" fill="#ffffff" rx="16"/>
+  <g transform="translate(30, 30)">
+    <!-- Official Republic Tricolor Strip -->
+    <rect x="0" y="10" width="8" height="160" fill="#002153"/>
+    <rect x="8" y="10" width="8" height="160" fill="#ffffff"/>
+    <rect x="16" y="10" width="8" height="160" fill="#ce1126"/>
+    
+    <!-- Institutional Emblem Badge -->
+    <g transform="translate(48, 10)">
+      <!-- Outer Seal Ring -->
+      <circle cx="70" cy="80" r="66" fill="none" stroke="#002153" stroke-width="4"/>
+      <circle cx="70" cy="80" r="60" fill="none" stroke="#002153" stroke-width="1.5" stroke-dasharray="4 3"/>
+      
+      <!-- Center Shield & Books Motif -->
+      <path d="M 70 32 C 85 32, 110 26, 115 26 C 115 26, 115 75, 115 88 C 115 110, 70 126, 70 126 C 70 126, 25 110, 25 88 C 25 75, 25 26, 25 26 C 30 26, 55 32, 70 32 Z" fill="#002153"/>
+      <path d="M 70 36 C 83 36, 106 31, 110 31 C 110 31, 110 74, 110 85 C 110 104, 70 120, 70 120 C 70 120, 30 104, 30 85 C 30 74, 30 31, 30 31 C 34 31, 57 36, 70 36 Z" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      
+      <!-- Quill & Open Book -->
+      <path d="M 48 76 C 48 76 59 70 70 76 C 81 70 92 76 92 76 L 92 98 C 92 98 81 92 70 98 C 59 92 48 98 48 98 Z" fill="#ffffff"/>
+      <line x1="70" y1="76" x2="70" y2="98" stroke="#002153" stroke-width="2"/>
+      
+      <!-- Academic Stars -->
+      <polygon points="70,44 73,52 81,52 75,57 77,65 70,60 63,65 65,57 59,52 67,52" fill="#f4c430"/>
+    </g>
+    
+    <!-- Text Block -->
+    <g transform="translate(210, 30)">
+      <text x="0" y="22" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#ce1126" letter-spacing="1.5">RÉPUBLIQUE FRANÇAISE</text>
+      <text x="0" y="42" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#74685f" letter-spacing="1">ACADÉMIE DE NORMANDIE</text>
+      
+      <line x1="0" y1="56" x2="310" y2="56" stroke="#002153" stroke-width="2"/>
+      
+      <text x="0" y="90" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="800" fill="#002153" letter-spacing="0.5">LYCÉE PIERRE</text>
+      <text x="0" y="122" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="800" fill="#002153" letter-spacing="0.5">CORNEILLE</text>
+      <text x="0" y="148" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#74685f" letter-spacing="2">ROUEN · FONDÉ EN 1593</text>
+    </g>
+  </g>
+</svg>

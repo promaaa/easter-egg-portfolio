@@ -1,0 +1,108 @@
+% !TEX program = xelatex
+\documentclass[10pt]{article}
+
+\usepackage[a4paper,top=13mm,bottom=13mm,left=14mm,right=14mm,footskip=9mm]{geometry}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{mdframed}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+
+% ---------- palette (light forest) ----------
+\definecolor{ink}{HTML}{1D211C}
+\definecolor{inksoft}{HTML}{484E45}
+\definecolor{inkmuted}{HTML}{818A7C}
+\definecolor{inkfaint}{HTML}{AEB5A3}
+\definecolor{rule}{HTML}{E6E7DE}
+\definecolor{rulestrong}{HTML}{D4D8C8}
+\definecolor{forest}{HTML}{42584A}
+\definecolor{paper}{HTML}{FAF9F4}
+
+\pagecolor{paper}
+\color{ink}
+
+% ---------- fonts (static instances) ----------
+\setmainfont{Inter-Regular.ttf}[Path=../assets/fonts/static/, BoldFont=Inter-SemiBold.ttf]
+\newfontfamily\fraunces{Fraunces-SemiBold.ttf}[Path=../assets/fonts/static/]
+\newfontfamily\frauncesit{Fraunces-Italic.ttf}[Path=../assets/fonts/static/]
+
+% ---------- layout ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[R]{\footnotesize\color{inkfaint}\thepage}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\emergencystretch=2em
+\graphicspath{{../assets/images/books/}}
+
+% ---------- longtable 2-column grid ----------
+\newcolumntype{L}{>{\raggedright\arraybackslash}p{88mm}}
+\setlength{\tabcolsep}{0pt}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+
+% ---------- prologue box (left rule, auto height) ----------
+\newmdenv[hidealllines=true,leftline=true,linecolor=forest,linewidth=0.6pt,
+  innertopmargin=0pt,innerbottommargin=0pt,innerrightmargin=0pt,
+  innerleftmargin=6mm,leftmargin=0pt,rightmargin=0pt]{prologuebox}
+
+% ---------- track header (kept with following row via \\*) ----------
+\newcommand{\trackheader}[2]{%
+  \footnotesize\bfseries\color{forest}#1\hspace{1.5em}{\color{ink}\MakeUppercase{#2}}%
+}
+
+% ---------- one book entry ----------
+\NewDocumentCommand{\bookentry}{ m m m m m m m m m }{%
+  \begin{minipage}[t]{13mm}\centering
+    \includegraphics[width=12mm]{#1}\par\vspace{1.5mm}
+    {\footnotesize\color{forest}\bfseries #2}%
+  \end{minipage}\hspace{4mm}%
+  \begin{minipage}[t]{\dimexpr\linewidth-17mm\relax}
+    \raggedright
+    {\large\fraunces #3}\par\vspace{1.5mm}
+    {\footnotesize\color{inkmuted}\MakeUppercase{#4}\,\textcolor{inkfaint}{\,\textperiodcentered\ \MakeUppercase{#5}}}\par\vspace{1.5mm}
+    {\footnotesize\color{inkmuted}{\scriptsize\color{forest}\bfseries\MakeUppercase{#6}\ }#7}\par\vspace{1.5mm}
+    {\small\color{inksoft}#8}\par\vspace{1.5mm}
+    {\small\frauncesit\color{ink}{\color{forest}\textemdash}\ #9}\par
+  \end{minipage}%
+  \par\vspace{3pt}\textcolor{rule}{\rule{\linewidth}{0.4pt}}%
+}
+
+\begin{document}
+
+% ===================== masthead =====================
+\noindent
+{\footnotesize\bfseries\color{inkmuted}\MakeUppercase{Marc Duboc \textperiodcentered{} Reading Field Guide}\hfill{\mdseries\color{inkfaint}Personal Selection for Friends \textperiodcentered{} 2026}}\par\vspace{4mm}
+{\huge\fraunces\color{ink}A Reader’s Guide to Thought, Freedom \& Craft}\par\vspace{4mm}
+\begin{prologuebox}
+  {\small\frauncesit\color{inksoft}“I put this guide together for close friends asking what shaped the way I think, build, and live. These aren’t books to pad a curriculum; they are high-leverage texts that provided me with mental clarity, discipline, and sovereignty. Read with a pencil, keep what serves you, ignore the rest.”}\par\vspace{2mm}
+  {\footnotesize\color{inkfaint}— Marc Duboc (@promaa) \textperiodcentered{} Paris, France}
+\end{prologuebox}\par\vspace{4mm}
+\par\vspace{1mm}\textcolor{rulestrong}{\rule{\linewidth}{0.5pt}}\par\vspace{4mm}
+
+% ===================== tracks =====================
+\begin{longtable}{@{}L@{\hspace{6mm}}L@{}}
+\multicolumn{2}{@{}p{\textwidth}@{}}{\trackheader{01}{Sovereignty, Freedom \& Clear Thinking}}\\*[2mm]
+\bookentry{01-frankl.jpg}{01}{Man’s Search for Meaning}{Viktor E. Frankl (1946)}{Logotherapy}{Best for:}{When feeling overwhelmed or losing your sense of purpose.}{Frankl survived Auschwitz and distilled the ultimate truth: you cannot control all circumstances, but you retain absolute sovereignty over your attitude.}{Find a "why" strong enough to outlast the collapse of any "how."} & \\[2mm]
+\multicolumn{2}{@{}p{\textwidth}@{}}{\trackheader{02}{Systems, Power \& Technology}}\\*[2mm]
+\bookentry{09-branco.jpg}{02}{Crépuscule}{Juan Branco (2019)}{Investigative Pamphlet}{Best for:}{Inspecting the revolving doors and inner circles of French power.}{The internal mapping of Parisian elite networks and financial backing is documented with surgical precision. An unvarnished look at power.}{An unvarnished anatomy of institutional incest in modern France.} & \\[2mm]
+\multicolumn{2}{@{}p{\textwidth}@{}}{\trackheader{03}{Craft, Solitude \& The Inner Fortress}}\\*[2mm]
+\bookentry{12-powys.jpg}{03}{A Philosophy of Solitude}{John Cowper Powys (1933)}{Inner Life}{Best for:}{Sinking into sensory calm during hyper-connected burnout.}{Practical rituals—walking alone, observing wind and stone, deliberate silence—to build an unshakeable inner fortress against external noise.}{Cultivating your inner world is the only real shield against noise.} & \\[2mm]
+\multicolumn{2}{@{}p{\textwidth}@{}}{\trackheader{04}{Great Narratives \& Human Truths}}\\*[2mm]
+\bookentry{18-gary-promesse.jpg}{04}{Promise at Dawn}{Romain Gary (1960)}{Autobiography}{Best for:}{Rekindling fierce filial love, courage, and literary panache.}{Gary’s unforgettable tribute to his mother’s boundless faith in him. Balances self-deprecating humor with extraordinary emotional gravity.}{The kind of book that makes you put it down and call your mother.} & \\[2mm]
+\end{longtable}
+
+% ===================== colophon =====================
+\vspace{5mm}
+\par\vspace{1mm}\textcolor{rulestrong}{\rule{\linewidth}{0.5pt}}\par\vspace{3mm}
+\noindent
+{\footnotesize\color{inkfaint}\MakeUppercase{Marc Duboc \textperiodcentered{} Reading Field Guide \textperiodcentered{} Paris, France}\hfill\MakeUppercase{marc.duboc.pro@proton.me \textperiodcentered{} github.com/promaaa}}\par
+
+\end{document}

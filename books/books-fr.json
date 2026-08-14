@@ -1,0 +1,88 @@
+{
+  "lang": "fr",
+  "track_1": "Souveraineté, Liberté & Clarté",
+  "track_2": "Systèmes, Pouvoir & Technologie",
+  "track_3": "Discipline, Solitude & Art",
+  "track_4": "Grands Récits & Vérités Humaines",
+  "masthead_tag": "Marc Duboc · Guide de Lecture",
+  "masthead_location": "Sélection personnelle pour des amis · 2026",
+  "masthead_title": "Guide du Lecteur : Pensée, Liberté & Souveraineté",
+  "prologue": "« J’ai conçu ce guide pour les amis qui me demandent quelles lectures ont véritablement structuré ma manière de penser, d'entreprendre et de vivre. Ce ne sont pas des livres pour faire joli sur une étagère ; ce sont des textes à fort effet de levier qui m'ont apporté clarté mentale, discipline et souveraineté. Lisez un crayon à la main, gardez ce qui vous sert, laissez le reste. »",
+  "prologue_author": "— Marc Duboc (@promaa) · Paris, France",
+  "colophon_left": "Marc Duboc · Guide de Lecture · Paris, France",
+  "colophon_right": "marc.duboc.pro@proton.me · github.com/promaaa",
+  "tracks": [
+    {
+      "num": "01",
+      "title": "Souveraineté, Liberté & Clarté",
+      "books": [
+        {
+          "num": "01",
+          "cover": "01-frankl.jpg",
+          "title": "Découvrir un sens à sa vie",
+          "author": "Viktor E. Frankl",
+          "year": "1946",
+          "genre": "Logothérapie",
+          "scenario_label": "Quand le lire :",
+          "scenario": "En période de doute ou de perte de cap intérieur.",
+          "verdict": "Frankl a survécu à Auschwitz pour en tirer la vérité ultime : on ne choisit pas ce qui arrive, mais on garde la souveraineté sur son attitude intérieure.",
+          "takeaway": "Trouver un « pourquoi » capable de résister à l'effondrement de tous les « comment »."
+        }
+      ]
+    },
+    {
+      "num": "02",
+      "title": "Systèmes, Pouvoir & Technologie",
+      "books": [
+        {
+          "num": "02",
+          "cover": "09-branco.jpg",
+          "title": "Crépuscule",
+          "author": "Juan Branco",
+          "year": "2019",
+          "genre": "Pamphlet d'Investigation",
+          "scenario_label": "Quand le lire :",
+          "scenario": "Pour comprendre les cercles de pouvoir et l'entre-soi.",
+          "verdict": "La cartographie des liens d'intérêts et de l'entre-soi des élites parisiennes y est documentée de façon clinique et sans fard.",
+          "takeaway": "Une plongée sans fard dans les rouages et la consanguinité des cercles de décision."
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "title": "Discipline, Solitude & Art",
+      "books": [
+        {
+          "num": "03",
+          "cover": "12-powys.jpg",
+          "title": "Une philosophie de la solitude",
+          "author": "John Cowper Powys",
+          "year": "1933",
+          "genre": "Vie Intérieure",
+          "scenario_label": "Quand le lire :",
+          "scenario": "En période de surcharge mentale et d'hyper-connexion.",
+          "verdict": "Des rituels concrets pour forger sa citadelle intérieure : marches solitaires, silence et reconnexion aux éléments bruts.",
+          "takeaway": "Cultiver son monde intérieur est le seul rempart réel contre le bruit du monde."
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "title": "Grands Récits & Vérités Humaines",
+      "books": [
+        {
+          "num": "04",
+          "cover": "18-gary-promesse.jpg",
+          "title": "La Promesse de l’aube",
+          "author": "Romain Gary",
+          "year": "1960",
+          "genre": "Autobiographie",
+          "scenario_label": "Quand le lire :",
+          "scenario": "Pour redécouvrir l'amour filial inconditionnel et le panache.",
+          "verdict": "L'hommage vibrant de Gary à sa mère. Un équilibre parfait entre autodérision jubilatoire, panache et émotion brute.",
+          "takeaway": "Le livre qui donne immédiatement envie d'appeler sa mère dès la dernière page."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucid Hope · Marc Duboc</title>
+    <meta name="description" content="A case for disciplined optimism, attention, and craft over cynicism." />
+    <meta name="author" content="Marc Duboc" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://promaa.live/essays/lucid-hope/" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://promaa.live/essays/lucid-hope/" />
+    <meta property="og:title" content="Lucid Hope · Marc Duboc" />
+    <meta property="og:description" content="A case for disciplined optimism, attention, and craft over cynicism." />
+    <meta property="og:image" content="https://promaa.live/assets/images/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Marc Duboc" />
+    <meta property="article:published_time" content="2025-07-03" />
+    <meta property="article:author" content="https://promaa.live/" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://promaa.live/essays/lucid-hope/" />
+    <meta name="twitter:title" content="Lucid Hope · Marc Duboc" />
+    <meta name="twitter:description" content="A case for disciplined optimism, attention, and craft over cynicism." />
+    <meta name="twitter:image" content="https://promaa.live/assets/images/og.png" />
+    <meta name="twitter:creator" content="@proma__" />
+    <meta name="twitter:site" content="@proma__" />
+
+    <!-- Google Fonts Preconnect & Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+
+    <!-- JSON-LD Structured Data: BlogPosting -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Lucid Hope",
+      "description": "A case for disciplined optimism, attention, and craft over cynicism.",
+      "url": "https://promaa.live/essays/lucid-hope/",
+      "image": "https://promaa.live/assets/images/og.png",
+      "datePublished": "2025-07-03",
+      "dateModified": "2025-07-03",
+      "author": {
+        "@type": "Person",
+        "name": "Marc Duboc",
+        "jobTitle": "Electrical & Embedded Systems Engineer",
+        "url": "https://promaa.live/",
+        "sameAs": [
+          "https://github.com/promaaa",
+          "https://linkedin.com/in/marc-duboc-072932316",
+          "https://x.com/proma__",
+          "https://www.youtube.com/@promaa_"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Marc Duboc",
+        "url": "https://promaa.live/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://promaa.live/essays/lucid-hope/"
+      }
+    }
+    </script>
+
+    <style>
+      :root {
+        --bg-color: #07070b;
+        --surface-color: rgba(14, 14, 20, 0.95);
+        --text-primary: #ffffff;
+        --text-secondary: #cbd5e1;
+        --text-muted: #94a3b8;
+        --text-dim: #64748b;
+        --border-subtle: rgba(255, 255, 255, 0.08);
+        --border-medium: rgba(255, 255, 255, 0.16);
+        --font-display: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: 'JetBrains Mono', monospace;
+      }
+
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        background-color: var(--bg-color);
+        color: var(--text-primary);
+        font-family: var(--font-body);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 1.5rem 6rem;
+      }
+
+      .reading-layout {
+        width: 100%;
+        max-width: 680px;
+        margin: 0 auto;
+      }
+
+      .essay-top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3.5rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .back-link:hover {
+        color: var(--text-primary);
+      }
+
+      .essay-meta-tag {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--text-dim);
+        letter-spacing: 0.08em;
+      }
+
+      .essay-hero-figure {
+        width: 100%;
+        margin-bottom: 2.75rem;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid var(--border-subtle);
+        background: var(--surface-color);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+      }
+
+      .essay-hero-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      .essay-header {
+        margin-bottom: 2.5rem;
+      }
+
+      .essay-kicker {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        margin-bottom: 0.75rem;
+      }
+
+      .essay-title {
+        font-family: var(--font-display);
+        font-size: clamp(2.2rem, 5vw, 3.2rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+      }
+
+      .essay-subtitle {
+        font-size: 1.15rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        font-style: italic;
+        font-weight: 300;
+        padding-bottom: 1.75rem;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .essay-prose {
+        display: flex;
+        flex-direction: column;
+        gap: 1.65rem;
+      }
+
+      .essay-prose p {
+        font-size: 1.05rem;
+        line-height: 1.82;
+        color: var(--text-secondary);
+        letter-spacing: -0.005em;
+      }
+
+      .essay-prose p:first-of-type::first-letter {
+        font-family: var(--font-display);
+        font-size: 3.2rem;
+        float: left;
+        line-height: 0.85;
+        margin: 0.15rem 0.65rem 0 0;
+        color: var(--text-primary);
+        font-weight: 700;
+      }
+
+      .essay-footer {
+        margin-top: 4.5rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid var(--border-subtle);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer-author {
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+
+      .footer-back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.55rem 1.1rem;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-subtle);
+        color: var(--text-primary);
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      .reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #5227FF, #FF9FFC, #ffffff);
+        width: 0%;
+        z-index: 1000;
+        transition: width 0.08s linear;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 1.5rem 1.1rem 4.5rem;
+        }
+
+        .essay-top-nav {
+          margin-bottom: 2rem;
+        }
+
+        .essay-hero-figure {
+          margin-bottom: 2rem;
+          border-radius: 12px;
+        }
+
+        .essay-header {
+          margin-bottom: 2rem;
+        }
+
+        .essay-title {
+          font-size: clamp(1.85rem, 8vw, 2.4rem);
+        }
+
+        .essay-subtitle {
+          font-size: 1.02rem;
+          padding-bottom: 1.25rem;
+        }
+
+        .essay-prose p {
+          font-size: 0.98rem;
+          line-height: 1.76;
+        }
+
+        .essay-prose p:first-of-type::first-letter {
+          font-size: 2.75rem;
+          margin: 0.1rem 0.5rem 0 0;
+        }
+
+        .essay-footer {
+          margin-top: 3.5rem;
+          padding-top: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+    <main class="reading-layout">
+      <!-- Top Navigation -->
+      <nav class="essay-top-nav">
+        <a href="../../" class="back-link">
+          <span>←</span>
+          <span>Marc Duboc</span>
+        </a>
+        <span class="essay-meta-tag"><time datetime="2025-07-03">Jul 3, 2025</time> • Essay</span>
+      </nav>
+
+      <!-- Hero Image -->
+      <figure class="essay-hero-figure">
+        <img
+          src="./picture.png"
+          alt="Lucid Hope · Marc Duboc"
+          class="essay-hero-img"
+          loading="lazy"
+          decoding="async"
+          width="680"
+          height="382"
+        />
+      </figure>
+
+      <!-- Essay Header -->
+      <header class="essay-header">
+        <div class="essay-kicker">02 / Essay</div>
+        <h1 class="essay-title">Lucid Hope</h1>
+        <p class="essay-subtitle">
+          A case for disciplined optimism, attention, and craft over cynicism.
+        </p>
+      </header>
+
+      <!-- Article Prose -->
+      <article class="essay-prose">
+        <p>
+          I know a time of day when the world stops arguing. The street hasn’t put on its headphones yet, notifications are asleep, the coffee smokes, and the air weighs almost nothing. Everything feels innocent. Then I open a screen and the inner weather shifts: a squall of crime blurbs, the slow erosion of trust, the conviction that everything is rigged. We call it realism; it’s often hypnosis.
+        </p>
+
+        <p>
+          Cynicism is a very effective hypnosis. It spreads by capillarity: a timeline saturated with darkness, two or three scandals on loop, the comfortable idea that society is a zero-sum game. It doesn’t matter that today’s numbers don’t certify apocalypse: the mind keeps the sensation of danger, like a driver braking for a shadow. The machine that narrates the world knows its lighting cues. It spotlights certain tragedies and muffles others with almost elegant consistency. From this aesthetic flows a moral: if the official story is fabricated, then everything is fabrication; if heroes are sometimes impostors, then every gesture is imposture. That’s the slope.
+        </p>
+
+        <p>
+          Skepticism is not a slope; it’s a bearing. It writes “perhaps” where cynicism stamps “of course.” The skeptic weighs; the cynic already knows. The first leaves the door ajar; the second locks it and throws the key out the window for the pleasure of saying it never existed.
+        </p>
+
+        <p>
+          The difference begins with attention. A mind doesn’t keep its poise when it drags “open loops” all day - those unfinished tasks that keep pinging in the background and tint everything with a low hum of anxiety. Closing the day with a small ritual - note what tomorrow will hold, whisper a private “shutdown complete” - returns territory to sleep, and sleep returns better proportions to morning. Night is a meticulous worker: it deflates affects, sorts our inner archives, grants us the gift of seeing others without demonizing them. Call it hygiene if you like; it is also politics. We tolerate the world badly when our circuits run hot.
+        </p>
+
+        <p>
+          What gnaws at the era isn’t only information; it’s powerlessness. Someone who goes to bed after having built something precise - a page, a program that runs, a server that answers, a workout taken to the end - doesn’t read the same news as someone who scrolled to exhaustion. One falls asleep with tangible proof that reality gives way under the hand; the other with proof that it never does. Cynicism, often, is not a conclusion; it’s an irritated skin of the soul.
+        </p>
+
+        <p>
+          It’s tempting to demand signs in order to believe - or, failing that, to repeat that every sign is only illusion. Cinema catalogs these temptations. Without a frame, without rites, without an aim, we all slide toward the same provisional brutality. We need more than moods.
+        </p>
+
+        <p>
+          That “more” isn’t just an idea. It’s a craft. You learn it the old way: withdraw a little, walk until thought finds its breath again, cultivate that active silence in which what matters rises on its own. Solitude isn’t retreat; it’s a geography where we readjust, where the world stops being a racket. There are hours - often at dusk - when you stand at the window as on a threshold and the air itself re-establishes just distances between things and you. The age mistakes this availability for weakness; it is the container without which no hope holds.
+        </p>
+
+        <p>
+          Nothing immunizes against cynicism like good work. Not the rage to shine; the discipline to do it right. A page polished until the sentence finally says what you truly thought isn’t a decorative caprice; it’s a cure for self-deception. With each reformulation you discover that a conceptual confusion hides inside a syntactic ugliness, and that clarity is not the makeup of the idea but its skeleton. Beauty here isn’t decoration; it’s evidence you didn’t cheat reality.
+        </p>
+
+        <p>
+          The body learns it too. A twelve-week plan promises nothing but a rendezvous - four times a week, in rain or sun. You meet a humiliating, gentle truth: constancy doesn’t depend on the world. It doesn’t need to believe that everything will work out; it needs a fixed wake-up, shoes ready, a notebook for times and distances. After twelve weeks you don’t become invincible; you become credible to yourself. That is already an important victory over the universal wisecrack called “anyway.”
+        </p>
+
+        <p>
+          Lucid hope does not ignore manipulation. It knows it from the inside: how a small gift creates a debt, how contrast makes a mediocre object desirable, how metrics lull us with false seriousness. But it refuses to conclude from these observations that every relationship is a stage, every bond a grip. It prefers the slow engineering of milieus where passions are tamed: a table kept, weekly rites, hours without network, a small circle with whom one can speak without posture. It’s unspectacular, but it changes the wind.
+        </p>
+
+        <p>
+          Hollow voluntarism tires quickly; lucid hope allows itself slowness. It speaks long term with a stubborn optimism and short term with a healthy suspicion. It doesn’t depend on a historical surprise; it is educated. It prefers invisible capital - what doesn’t show, what wasn’t spent, what was simplified - to trophies. It invests each month in future freedom: a bit of savings, a bit less debt, a Saturday morning freed for something other than the frantic runaround. It doesn’t sneer at “small gestures”: they are a carpenter’s gestures.
+        </p>
+
+        <p>
+          The cynic believes lucidity is measured by the volume of his disdain. Lucid hope prefers precision. It doesn’t say “it will be fine”; it says “it is worth it.” It doesn’t deny the darkness; it refuses to make a fate of it. Above all it knows that the proofs that convince an incredulous mind are rarely concepts. They are details: a handwritten “shutdown” before closing the laptop, a session done when you didn’t want to, a letter sent, a service hosted at home, a table cleared, a story told without cynicism to someone who needed it.
+        </p>
+
+        <p>
+          We can keep the crooked smile, of course. It’s a practical mask. Or we can risk the slight ridiculousness of learning one more trade: hoping without lying to oneself. It isn’t a feeling; it’s a habit. It can be worked. It shifts the center of gravity of a life. And, sometimes, a world.
+        </p>
+      </article>
+
+      <!-- Footer -->
+      <footer class="essay-footer">
+        <span class="footer-author">Marc Duboc · Paris, France</span>
+        <a href="../../" class="footer-back-btn">
+          <span>← Back to portfolio</span>
+        </a>
+      </footer>
+    </main>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        const bar = document.getElementById('reading-progress');
+        if (bar) bar.style.width = scrolled + '%';
+      }, { passive: true });
+    </script>
+  </body>
+</html>

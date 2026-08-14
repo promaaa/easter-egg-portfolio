@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Unspoken Dialogue · Marc Duboc</title>
+    <meta name="description" content="On the grounding honesty of physical effort and its dialogue with the intellectual mind." />
+    <meta name="author" content="Marc Duboc" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://promaa.live/essays/unspoken-dialogue/" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://promaa.live/essays/unspoken-dialogue/" />
+    <meta property="og:title" content="The Unspoken Dialogue · Marc Duboc" />
+    <meta property="og:description" content="On the grounding honesty of physical effort and its dialogue with the intellectual mind." />
+    <meta property="og:image" content="https://promaa.live/assets/images/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Marc Duboc" />
+    <meta property="article:published_time" content="2025-10-17" />
+    <meta property="article:author" content="https://promaa.live/" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://promaa.live/essays/unspoken-dialogue/" />
+    <meta name="twitter:title" content="The Unspoken Dialogue · Marc Duboc" />
+    <meta name="twitter:description" content="On the grounding honesty of physical effort and its dialogue with the intellectual mind." />
+    <meta name="twitter:image" content="https://promaa.live/assets/images/og.png" />
+    <meta name="twitter:creator" content="@proma__" />
+    <meta name="twitter:site" content="@proma__" />
+
+    <!-- Google Fonts Preconnect & Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+
+    <!-- JSON-LD Structured Data: BlogPosting -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The Unspoken Dialogue",
+      "description": "On the grounding honesty of physical effort and its dialogue with the intellectual mind.",
+      "url": "https://promaa.live/essays/unspoken-dialogue/",
+      "image": "https://promaa.live/assets/images/og.png",
+      "datePublished": "2025-10-17",
+      "dateModified": "2025-10-17",
+      "author": {
+        "@type": "Person",
+        "name": "Marc Duboc",
+        "jobTitle": "Electrical & Embedded Systems Engineer",
+        "url": "https://promaa.live/",
+        "sameAs": [
+          "https://github.com/promaaa",
+          "https://linkedin.com/in/marc-duboc-072932316",
+          "https://x.com/proma__",
+          "https://www.youtube.com/@promaa_"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Marc Duboc",
+        "url": "https://promaa.live/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://promaa.live/essays/unspoken-dialogue/"
+      }
+    }
+    </script>
+
+    <style>
+      :root {
+        --bg-color: #07070b;
+        --surface-color: rgba(14, 14, 20, 0.95);
+        --text-primary: #ffffff;
+        --text-secondary: #cbd5e1;
+        --text-muted: #94a3b8;
+        --text-dim: #64748b;
+        --border-subtle: rgba(255, 255, 255, 0.08);
+        --border-medium: rgba(255, 255, 255, 0.16);
+        --accent-silver: #e2e8f0;
+        --accent-wave: #FF9FFC;
+        --font-display: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: 'JetBrains Mono', monospace;
+        --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        background-color: var(--bg-color);
+        color: var(--text-primary);
+        font-family: var(--font-body);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 1.5rem 6rem;
+      }
+
+      /* Reading Container */
+      .reading-layout {
+        width: 100%;
+        max-width: 680px;
+        margin: 0 auto;
+      }
+
+      /* Top Navigation Bar */
+      .essay-top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3.5rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .back-link:hover {
+        color: var(--text-primary);
+      }
+
+      .essay-meta-tag {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--text-dim);
+        letter-spacing: 0.08em;
+      }
+
+      /* Hero Image */
+      .essay-hero-figure {
+        width: 100%;
+        margin-bottom: 2.75rem;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid var(--border-subtle);
+        background: var(--surface-color);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+      }
+
+      .essay-hero-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      /* Header */
+      .essay-header {
+        margin-bottom: 2.5rem;
+      }
+
+      .essay-kicker {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        margin-bottom: 0.75rem;
+      }
+
+      .essay-title {
+        font-family: var(--font-display);
+        font-size: clamp(2.2rem, 5vw, 3.2rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+      }
+
+      .essay-subtitle {
+        font-size: 1.15rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        font-style: italic;
+        font-weight: 300;
+        padding-bottom: 1.75rem;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      /* Prose Typography */
+      .essay-prose {
+        display: flex;
+        flex-direction: column;
+        gap: 1.65rem;
+      }
+
+      .essay-prose p {
+        font-size: 1.05rem;
+        line-height: 1.82;
+        color: var(--text-secondary);
+        letter-spacing: -0.005em;
+      }
+
+      .essay-prose p:first-of-type::first-letter {
+        font-family: var(--font-display);
+        font-size: 3.2rem;
+        float: left;
+        line-height: 0.85;
+        margin: 0.15rem 0.65rem 0 0;
+        color: var(--text-primary);
+        font-weight: 700;
+      }
+
+      /* Footer */
+      .essay-footer {
+        margin-top: 4.5rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid var(--border-subtle);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer-author {
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+
+      .footer-back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.55rem 1.1rem;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-subtle);
+        color: var(--text-primary);
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      .reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #5227FF, #FF9FFC, #ffffff);
+        width: 0%;
+        z-index: 1000;
+        transition: width 0.08s linear;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 1.5rem 1.1rem 4.5rem;
+        }
+
+        .essay-top-nav {
+          margin-bottom: 2rem;
+        }
+
+        .essay-hero-figure {
+          margin-bottom: 2rem;
+          border-radius: 12px;
+        }
+
+        .essay-header {
+          margin-bottom: 2rem;
+        }
+
+        .essay-title {
+          font-size: clamp(1.85rem, 8vw, 2.4rem);
+        }
+
+        .essay-subtitle {
+          font-size: 1.02rem;
+          padding-bottom: 1.25rem;
+        }
+
+        .essay-prose p {
+          font-size: 0.98rem;
+          line-height: 1.76;
+        }
+
+        .essay-prose p:first-of-type::first-letter {
+          font-size: 2.75rem;
+          margin: 0.1rem 0.5rem 0 0;
+        }
+
+        .essay-footer {
+          margin-top: 3.5rem;
+          padding-top: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+    <main class="reading-layout">
+      <!-- Top Navigation -->
+      <nav class="essay-top-nav">
+        <a href="../../" class="back-link">
+          <span>←</span>
+          <span>Marc Duboc</span>
+        </a>
+        <span class="essay-meta-tag"><time datetime="2025-10-17">Oct 17, 2025</time> • Essay</span>
+      </nav>
+
+      <!-- Hero Image -->
+      <figure class="essay-hero-figure">
+        <img
+          src="./picture.png"
+          alt="The Unspoken Dialogue · Marc Duboc"
+          class="essay-hero-img"
+          loading="lazy"
+          decoding="async"
+          width="680"
+          height="382"
+        />
+      </figure>
+
+      <!-- Essay Header -->
+      <header class="essay-header">
+        <div class="essay-kicker">01 / Essay</div>
+        <h1 class="essay-title">The Unspoken Dialogue</h1>
+        <p class="essay-subtitle">
+          On the grounding honesty of physical effort and its dialogue with the intellectual mind.
+        </p>
+      </header>
+
+      <!-- Article Prose -->
+      <article class="essay-prose">
+        <p>
+          The mind likes to believe it is sovereign. It builds worlds from logic, floats in the clean ether of abstraction, and forgets the machine of blood and bone that carries it. We spend our days in the quiet hum of screens, where the only effort is the click of a key, the scroll of a mouse. The body becomes a ghost, a background process we notice only when it fails. But thought without a body is a kite without a string. It drifts, untethered, and mistakes its own altitude for truth.
+        </p>
+
+        <p>
+          There is another way: the unspoken dialogue. It is the conversation you have with yourself when the only interface is effort. For twelve years, my dialogue was the sprint. A language of explosive power, of pure, violent presence. The hundred-meter dash is a brutal education in honesty. There is no room for negotiation. The body speaks in milliseconds, in the precise angle of the foot, in the burn of lactic acid. It teaches the mind to be here, now, entirely. You cannot cheat the clock. You learn that peak performance is not a mood; it is a physical state, earned through relentless, focused repetition.
+        </p>
+
+        <p>
+          Then the dialogue changed. The sprint’s sharp monologue became the long, patient conversation of the run. Four years of endurance, where the currency is not power, but resilience. The body learns a new grammar. A 17-minute 5k is not a burst; it is a sustained argument against the desire to quit. A 38-minute 10k is a lesson in pacing, in knowing when to push and when to hold back. An hour and twenty-five minutes for a half-marathon teaches you the art of managing discomfort, of making a home in the pain. And a three-hour marathon is a full-blown treaty with your own limits. These are not just numbers; they are the documented history of a negotiation with the self.
+        </p>
+
+        <p>
+          This dialogue is not a distraction from intellectual work; it is its foundation. The same focus required to hold a pace in the tenth kilometer is the focus needed to untangle a complex piece of code. The same resilience that carries you through the thirtieth kilometer of a marathon is the resilience that allows you to face a difficult problem without flinching. The body teaches the mind a form of structural integrity. It provides a ground truth, a non-negotiable reality that cuts through the fog of abstraction. You cannot fake a sub-three-hour marathon, just as you cannot fake a sound argument.
+        </p>
+
+        <p>
+          The body becomes an anchor, not a burden. It reminds the mind that all thought is embodied, that clarity is a physical state as much as a mental one. The fatigue after a long run is a clean fatigue. It quiets the anxious chatter of the brain and leaves a space for a different kind of thinking to emerge - slower, deeper, more grounded. The daily ritual of training is a contract. It is a promise to show up, to listen to the body’s feedback, to respect its limits, and to push them with intelligence.
+        </p>
+
+        <p>
+          We live in an age that celebrates the disembodied mind. We want the insights without the effort, the knowledge without the practice. But the unspoken dialogue with the physical self offers a more robust form of wisdom. It teaches that mastery is not an idea, but a practice. That resilience is not a mindset, but a trained response. And that the most profound thoughts are often born not in the quiet of the office, but in the rhythmic, breathing silence of the run, where the only thing you hear is the steady beat of your own heart, speaking a language older and more honest than words.
+        </p>
+      </article>
+
+      <!-- Footer -->
+      <footer class="essay-footer">
+        <span class="footer-author">Marc Duboc • Paris, France</span>
+        <a href="../../" class="footer-back-btn">
+          <span>← Back to portfolio</span>
+        </a>
+      </footer>
+    </main>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        const bar = document.getElementById('reading-progress');
+        if (bar) bar.style.width = scrolled + '%';
+      }, { passive: true });
+    </script>
+  </body>
+</html>

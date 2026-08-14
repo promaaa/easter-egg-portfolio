@@ -1,0 +1,88 @@
+{
+  "lang": "en",
+  "track_1": "Sovereignty, Freedom & Clear Thinking",
+  "track_2": "Systems, Power & Technology",
+  "track_3": "Craft, Solitude & The Inner Fortress",
+  "track_4": "Great Narratives & Human Truths",
+  "masthead_tag": "Marc Duboc · Reading Field Guide",
+  "masthead_location": "Personal Selection for Friends · 2026",
+  "masthead_title": "A Reader’s Guide to Thought, Freedom & Craft",
+  "prologue": "“I put this guide together for close friends asking what shaped the way I think, build, and live. These aren’t books to pad a curriculum; they are high-leverage texts that provided me with mental clarity, discipline, and sovereignty. Read with a pencil, keep what serves you, ignore the rest.”",
+  "prologue_author": "— Marc Duboc (@promaa) · Paris, France",
+  "colophon_left": "Marc Duboc · Reading Field Guide · Paris, France",
+  "colophon_right": "marc.duboc.pro@proton.me · github.com/promaaa",
+  "tracks": [
+    {
+      "num": "01",
+      "title": "Sovereignty, Freedom & Clear Thinking",
+      "books": [
+        {
+          "num": "01",
+          "cover": "01-frankl.jpg",
+          "title": "Man’s Search for Meaning",
+          "author": "Viktor E. Frankl",
+          "year": "1946",
+          "genre": "Logotherapy",
+          "scenario_label": "Best for:",
+          "scenario": "When feeling overwhelmed or losing your sense of purpose.",
+          "verdict": "Frankl survived Auschwitz and distilled the ultimate truth: you cannot control all circumstances, but you retain absolute sovereignty over your attitude.",
+          "takeaway": "Find a \"why\" strong enough to outlast the collapse of any \"how.\""
+        }
+      ]
+    },
+    {
+      "num": "02",
+      "title": "Systems, Power & Technology",
+      "books": [
+        {
+          "num": "02",
+          "cover": "09-branco.jpg",
+          "title": "Crépuscule",
+          "author": "Juan Branco",
+          "year": "2019",
+          "genre": "Investigative Pamphlet",
+          "scenario_label": "Best for:",
+          "scenario": "Inspecting the revolving doors and inner circles of French power.",
+          "verdict": "The internal mapping of Parisian elite networks and financial backing is documented with surgical precision. An unvarnished look at power.",
+          "takeaway": "An unvarnished anatomy of institutional incest in modern France."
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "title": "Craft, Solitude & The Inner Fortress",
+      "books": [
+        {
+          "num": "03",
+          "cover": "12-powys.jpg",
+          "title": "A Philosophy of Solitude",
+          "author": "John Cowper Powys",
+          "year": "1933",
+          "genre": "Inner Life",
+          "scenario_label": "Best for:",
+          "scenario": "Sinking into sensory calm during hyper-connected burnout.",
+          "verdict": "Practical rituals—walking alone, observing wind and stone, deliberate silence—to build an unshakeable inner fortress against external noise.",
+          "takeaway": "Cultivating your inner world is the only real shield against noise."
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "title": "Great Narratives & Human Truths",
+      "books": [
+        {
+          "num": "04",
+          "cover": "18-gary-promesse.jpg",
+          "title": "Promise at Dawn",
+          "author": "Romain Gary",
+          "year": "1960",
+          "genre": "Autobiography",
+          "scenario_label": "Best for:",
+          "scenario": "Rekindling fierce filial love, courage, and literary panache.",
+          "verdict": "Gary’s unforgettable tribute to his mother’s boundless faith in him. Balances self-deprecating humor with extraordinary emotional gravity.",
+          "takeaway": "The kind of book that makes you put it down and call your mother."
+        }
+      ]
+    }
+  ]
+}
