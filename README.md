@@ -37,7 +37,7 @@ Your site will be live instantly at `https://<your-username>.github.io/<your-rep
 ├── index.html            # Standalone static entrypoint (Homepage)
 ├── favicon.svg           # Site vector favicon
 ├── og.png                # Social share preview card (1200x630)
-├── CNAME                 # Custom domain configuration (promaa.live)
+├── CNAME                 # Custom domain configuration (promaa.tech)
 ├── robots.txt            # Crawler instructions & sitemap link
 ├── sitemap.xml           # Search engine sitemap
 ├── generate-pdfs.sh      # LaTeX (XeTeX) PDF compilation script

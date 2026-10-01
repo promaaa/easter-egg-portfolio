@@ -4,4 +4,4 @@ Allow: /
 # Internal HTMX fragments are not meant for indexing
 Disallow: /fragments/
 
-Sitemap: https://promaa.live/sitemap.xml
+Sitemap: https://promaa.tech/sitemap.xml
